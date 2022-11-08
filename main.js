@@ -17,7 +17,7 @@ if (navigator.geolocation) {
 async function getWeatherData(long, lat) {
   try {
     const results = await fetch(
-      `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${long}&exclude=minutely&units=metric&lang=fr&appid=a7725b21fb3647ebdddeb72a81920bd8`
+      `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${long}&exclude=minutely&units=metric&lang=fr&appid=`
     );
 
     if (!results.ok) {
